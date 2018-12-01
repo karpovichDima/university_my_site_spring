@@ -1,4 +1,4 @@
-package com.university;
+package com.university.model;
 
 import javax.persistence.*;
 
@@ -10,7 +10,9 @@ public class User
     @Column(nullable = false, unique = true)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column
     private String name;
+    @Column
     private String email;
 
 

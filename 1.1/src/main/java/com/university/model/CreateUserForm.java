@@ -1,4 +1,4 @@
-package com.university;
+package com.university.model;
 
 import org.hibernate.validator.constraints.Length;
 
