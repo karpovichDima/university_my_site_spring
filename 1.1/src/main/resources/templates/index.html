@@ -1,25 +1,28 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <title>Develop</title>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" href="css/main.css">
+
+    <!--<link rel="stylesheet" href="../webapp/resources/css/main.css">-->
+    <link rel="stylesheet" th:href="@{main.css}">
+
+
+
     <link href="https://fonts.googleapis.com/css?family=Merriweather|PT+Sans+Caption:400,700" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../static/favicon-16x16.png">
 </head>
 
-
 <body>
+<p th:text="'Hello, ' + ${name} + '!'"></p>
 <!--  HEADER-->
 <div class="work_space">
     <div class="message_box">
         <form action="http://localhost:8080//signup">
             <input type="text" name="name" placeholder="name">
             <input type="text" name="email" placeholder="email">
-
             <input id = "button_send" type="submit" value="button_send">
         </form>
     </div>
@@ -56,7 +59,7 @@
                 <div class="col-4">
                     <div class="portfolio-item">
                         <div class="portfolio-item_img">
-                            <img src="img/portfolio/project_chat.jpg">
+                            <img src="../static/project_chat.jpg">
                         </div>
                         <div class="portfolio-item_title">
                             <p><a href="chatauri_page.html">Chatauri</a></p>
@@ -73,7 +76,7 @@
                 <div class="col-4">
                     <div class="portfolio-item">
                         <div class="portfolio-item_img">
-                            <img src="img/portfolio/project_weather.jpg">
+                            <img src="../static/project_weather.jpg">
                         </div>
                         <div class="portfolio-item_title">
                             <a href="sad_weather_page.html">SadWeather</a>
@@ -89,7 +92,7 @@
                 <div class="col-4">
                     <div class="portfolio-item">
                         <div class="portfolio-item_img">
-                            <img src="img/portfolio/project_analizer.jpg">
+                            <img src="../static/project_analizer.jpg">
                         </div>
                         <div class="portfolio-item_title">
                             <a href="analiz_page.html">ActivityAnalyzer</a>
@@ -116,18 +119,18 @@
         </div>
         <div class="services">
             <div class="services__item">
-                <img src="img/services/if_alien-2_2981801.png">
+                <img src="../static/if_alien-2_2981801.png">
                 <h3>Android application</h3>
                 <p>Development of an application for your order, according to a clearly defined request.</p>
             </div>
             <div class="services__item">
-                <img src="img/services/if_death-star_2981784.png">
+                <img src="../static/if_death-star_2981784.png">
                 <h3>Design</h3>
                 <p>Assistance with software engineering and architecture design
                     in areas such as relational databases, server development.</p>
             </div>
             <div class="services__item">
-                <img src="img/services/if_cassiopeia_2981805.png">
+                <img src="../static/if_cassiopeia_2981805.png">
                 <h3>Write tests</h3>
                 <p>Testing the application for vulnerabilities, writing QA tests.</p>
             </div>
