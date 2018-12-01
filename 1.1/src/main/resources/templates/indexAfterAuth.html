@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <link rel="stylesheet" type="text/css" href="src/main/resources/static/css/main.css"/>
     <meta charset="utf-8" http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <title>Develop</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
@@ -18,6 +17,7 @@
 <!--  HEADER-->
 <div class="work_space">
     <div class="header">
+        <p th:text="'Hi ' + ${name} + ', thanks for your time, I will neceseirly answer on this email: ' +  ${email} + '!'"></p>
         <div class="container">
             <nav>
                 <ul class="menu">

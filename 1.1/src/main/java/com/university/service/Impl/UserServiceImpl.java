@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
 
-import javax.validation.constraints.Null;
+import java.util.HashMap;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -24,32 +24,13 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void saveUserToDB(CreateUserForm userForm, Model model) {
-        if (userForm.getEmail() == null) {
-            model.addAttribute("message", "email is empty");
-            return;
-        }
-        if (userForm.getName() == null) {
-            model.addAttribute("message", "name is empty");
-            return;
-        }
+    public HashMap saveUserToDB(CreateUserForm userForm, Model model) {
+        HashMap<String, String> listOfAttributes = new HashMap<>();
         User user = convertFormToUser(userForm);
-
-        try {
-            isExistUserInDB(user);
-        } catch (Exception e) {
-            e.printStackTrace();
-            model.addAttribute("message","User with it email exist in system");
-            return;
-        }
-
-        String email = user.getEmail();
-        String name = user.getName();
-
-        model.addAttribute("email", email);
-        model.addAttribute("name", name);
-
+        listOfAttributes.put("email", user.getEmail());
+        listOfAttributes.put("name", user.getName());
         userRepository.saveAndFlush(user);
+        return listOfAttributes;
     }
 
     private void isExistUserInDB(User user) throws Exception {

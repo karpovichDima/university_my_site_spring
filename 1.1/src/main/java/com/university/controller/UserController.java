@@ -10,6 +10,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 
+import java.util.HashMap;
+import java.util.List;
+
 @Controller
 public class UserController {
 
@@ -18,38 +21,35 @@ public class UserController {
 
     @GetMapping("/signup")
     public String getTextFromForm(@ModelAttribute CreateUserForm userForm, Model model) {
-        userService.saveUserToDB(userForm, model);
-        return "indexAfterAuth.html";
+        HashMap attributes = userService.saveUserToDB(userForm, model);
+        model.addAttribute("email", attributes.get("email"));
+        model.addAttribute("name", attributes.get("name"));
+        return "indexAfterAuth";
     }
 
     @GetMapping("/home")
-    public String startMainPage(){
+    public String startMainPage() {
         return "index.html";
     }
 
     @GetMapping("/contacts")
-    public String startContacts(){
+    public String startContacts() {
         return "contacts.html";
     }
 
     @GetMapping("/chatauri")
-    public String startChatauri(){
+    public String startChatauri() {
         return "chatauri_page.html";
     }
 
     @GetMapping("/weather")
-    public String startWhether(){
+    public String startWhether() {
         return "sad_weather_page.html";
     }
 
     @GetMapping("/analiz")
-    public String startAnalizPage(){
+    public String startAnalizPage() {
         return "analiz_page.html";
     }
-
-
-
-
-
 
 }
