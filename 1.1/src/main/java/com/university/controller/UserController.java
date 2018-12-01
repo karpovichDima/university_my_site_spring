@@ -29,27 +29,27 @@ public class UserController {
 
     @GetMapping("/home")
     public String startMainPage() {
-        return "index.html";
+        return "indexAfterAuth";
     }
 
     @GetMapping("/contacts")
     public String startContacts() {
-        return "contacts.html";
+        return "contacts";
     }
 
     @GetMapping("/chatauri")
     public String startChatauri() {
-        return "chatauri_page.html";
+        return "chatauri_page";
     }
 
     @GetMapping("/weather")
     public String startWhether() {
-        return "sad_weather_page.html";
+        return "sad_weather_page";
     }
 
     @GetMapping("/analiz")
     public String startAnalizPage() {
-        return "analiz_page.html";
+        return "analiz_page";
     }
 
 }

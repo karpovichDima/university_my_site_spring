@@ -4,20 +4,18 @@
     <meta charset="utf-8" http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <title>Develop</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-
     <link rel="stylesheet" th:href="@{css/main.css}">
-
     <link href="https://fonts.googleapis.com/css?family=Merriweather|PT+Sans+Caption:400,700" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" th:href="@{favicon-16x16.png}">
-
 </head>
 
 <body>
 <!--  HEADER-->
 <div class="work_space">
     <div class="header">
-        <p th:text="'Hi ' + ${name} + ', thanks for your time, I will neceseirly answer on this email: ' +  ${email} + '!'"></p>
+        <div th:if="${name != null}"
+             th:text="'Hi ' + ${name} + ', thanks for your time, I will neceseirly answer on this email: ' +  ${email} + '!'"></div>
         <div class="container">
             <nav>
                 <ul class="menu">
@@ -38,7 +36,6 @@
     </div>
 </div>
 <!--  HEADER-->
-
 
 <!--    PORTFOLIO-->
 <section id="portfolio">
@@ -100,7 +97,6 @@
     </div>
 </section>
 <!--    PORTFOLIO-->
-
 
 <!--    FOOTER-->
 <section id="services">
