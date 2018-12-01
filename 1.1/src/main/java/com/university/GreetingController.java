@@ -17,6 +17,37 @@ public class GreetingController {
         String name = user.getName();
         model.addAttribute("email", email);
         model.addAttribute("name", name);
-        return "index";
+        return "index.html";
     }
+
+    @GetMapping("/home")
+    public String startMainPage(){
+        return "index.html";
+    }
+
+    @GetMapping("/contacts")
+    public String startContacts(){
+        return "contacts.html";
+    }
+
+    @GetMapping("/chatauri")
+    public String startChatauri(){
+        return "chatauri_page.html";
+    }
+
+    @GetMapping("/weather")
+    public String startWhether(){
+        return "sad_weather_page.html";
+    }
+
+    @GetMapping("/analiz")
+    public String startAnalizPage(){
+        return "analiz_page.html";
+    }
+
+
+
+
+
+
 }
