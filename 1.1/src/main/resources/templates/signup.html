@@ -1,0 +1,31 @@
+<section layout:decorate="layouts/general" layout:fragment="content" xmlns:th="http://www.w3.org/1999/xhtml">
+    <form th:action="@{/signup}" th:object="${userForm}" method="post">
+        <div class="form-group">
+            <label for="loginInput">Login</label>
+            <input type="text" th:field="*{login}" th:text="*{login}" class="form-control" id="loginInput" aria-describedby="loginHelp" placeholder="Enter Login">
+            <small id="loginHelp" class="form-text text-muted">Enter your login.</small>
+        </div>
+        <div class="form-group">
+            <label for="emailInput">Email address</label>
+            <input type="email" th:field="*{email}" th:text="*{email}" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">Email should be here.</small>
+        </div>
+        <div class="form-group">
+            <label for="inputPassword">Password</label>
+            <input type="password" th:field="*{name}" th:text="*{name}" class="form-control" id="inputPassword" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <label for="inputPasswordConfirm">Password Confirmation</label>
+            <input type="password" class="form-control" id="inputPasswordConfirm" placeholder="Confirm Password">
+        </div>
+
+        <div class="form-group">
+            <label for="inputLevel">Password Confirmation</label>
+            <select th:field="*{level}" id="inputLevel">
+                <option th:each="level : ${levels}" th:value="${level.name()}" th:text="${level.name()}" class="form-control">
+                </option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Create new account</button>
+    </form>
+</section>
