@@ -19,15 +19,16 @@ nav {
 }
 
 .message_box {
+    margin-top: 80px;
     position: absolute;
-    height: 250px;
+    height: 75px;
     width: 250px;
-    border: 1px solid black;
     top: 320px;
     right: 180px;
 }
 
 #button_send {
+    margin-top: 10px;
     width: 125px;
     margin-left: 62px;
 }
@@ -395,3 +396,9 @@ header {
 
 /*//////////////////////////////////////////////////FOOTER*/
 
+.introduce {
+    text-align: center;
+    color: #c9d2ca;
+    font-size: 10px;
+    font-family: 'PT Sans Caption', sans-serif;
+}

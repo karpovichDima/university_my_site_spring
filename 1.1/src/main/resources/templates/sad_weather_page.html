@@ -17,9 +17,11 @@
         <div class="container_whether">
             <nav>
                 <ul class="menu">
-                    <li><a href="index.html">Home</a></li>
                     <li>
-                        <a href="contacts.html">Contact</a>
+                        <a href="/home">Home</a>
+                    </li>
+                    <li>
+                        <a href="/contacts">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -33,7 +35,6 @@
     </div>
     <!--  HEADER-->
 
-
     <!--    FOOTER-->
     <section id="footer_chatauri">
         <div class="first_section_weather_page">
@@ -43,7 +44,7 @@
                 </div>
                 <div class="services_clearfix">
                     <div class="services__item">
-                        <img src="../static/sad_weather_1.1.jpg">
+                        <img th:src="@{sad_weather_1.1.jpg}"/>
                         <div class="headline">
                             <h3>Purpose</h3>
                         </div>
@@ -58,7 +59,7 @@
                         </div>
                     </div>
                     <div class="services__item">
-                        <img src="../static/sad_weather_1.2.jpg">
+                        <img th:src="@{sad_weather_1.2.jpg}"/>
                         <div class="headline">
                             <h3>Design</h3>
                         </div>

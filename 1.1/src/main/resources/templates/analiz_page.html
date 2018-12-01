@@ -17,10 +17,10 @@
         <nav>
             <ul class="menu">
                 <li>
-                    <a th:href="@{index.html}">Home</a>
+                    <a href="/home">Home</a>
                 </li>
                 <li>
-                    <a href="contacts.html">Contact</a>
+                    <a href="/contacts">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -64,7 +64,7 @@
             </div>
             <div class="services__item">
                 <div class="image_analizer">
-                    <img src="../static/analiz_1.2.jpg">
+                    <img th:src="@{analiz_1.2.jpg}"/>
                 </div>
                 <div class="headline">
                     <h3>Design</h3>
