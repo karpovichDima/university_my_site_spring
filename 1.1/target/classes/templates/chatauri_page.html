@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>Develop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" th:href="@{css/main.css}">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|PT+Sans+Caption:400,700" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="../static/favicon-16x16.png">
+</head>
+
+<body>
+<!--  HEADER-->
+<div class="header">
+    <div class="container">
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="/home">Home</a>
+                </li>
+                <li>
+                    <a href="/contacts">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container"></div>
+    <div class="header__title">Karpovich Dmitry</div>
+    <div class="header__slogan">Android<br>Backend<br>Develop</div>
+    <div class="header__arrow">
+        <a href="#footer_chatauri"> <i class="fa fa-chevron-down" aria-hidden="true"> </i></a>
+    </div>
+</div>
+<!--  HEADER-->
+
+<!--    FOOTER-->
+<section id="footer_chatauri">
+    <div class="container_chatauri_page">
+        <div class="title_description_app">
+            <h2>What you need to know about this application</h2>
+        </div>
+        <div class="services_clearfix">
+            <div class="services__item">
+                <img th:src="@{project_1_1.jpg}"/>
+                <div class="headline">
+                    <h3>Purpose</h3>
+                </div>
+                <div class="services__item__text">
+                    <p>
+                        Standard modern chat with cloud sync.
+                        The main feature of the application - it is possible to call.
+                        Moreover, it is possible to call even at low Internet speeds,
+                        which will clearly be an advantage when going out of town.
+                        The emphasis in the application is on speed and simplicity.
+                    </p>
+                </div>
+            </div>
+            <div class="services__item">
+                <img th:src="@{project_1_2.jpg}"/>
+                <div class="headline">
+                    <h3>Design</h3>
+                </div>
+                <div class="services__item__text">
+                    <p>
+                        The design is incredibly minimalist, so creative people will
+                        definitely like it. Since the feature of the application is
+                        simplicity, a special approach was required to the interface,
+                        for example, the user can change all the backgrounds in the
+                        application at his own discretion.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="table_parent">
+        <div class="table_chatauri_1">
+            <table>
+                <tbody>
+                    <div class="header_for_table">Who liked it</div>
+                <tr>
+                    <th>Rating</th>
+                    <th>Region</th>
+                    <th>Local</th>
+                </tr>
+                <tr>
+                    <td>3.9</td>
+                    <td>China</td>
+                    <td>+-</td>
+                </tr>
+                <tr>
+                    <td>4.1</td>
+                    <td>Spain</td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <td>4.9</td>
+                    <td>Austria</td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <td>4.1</td>
+                    <td>Italy</td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <td>4.3</td>
+                    <td>Netherlands</td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <td>4.4</td>
+                    <td>Norway</td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <td>4.1</td>
+                    <td>France</td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <td>4.6</td>
+                    <td>USA</td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <td>4.9</td>
+                    <td>Germany</td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <td>3.9</td>
+                    <td>Switzerland</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>4.5</td>
+                    <td>Canada</td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <td>4.5</td>
+                    <td>Britain</td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <td>3.4</td>
+                    <td>Japan</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>4.6</td>
+                    <td>Sweden</td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <td>3.9</td>
+                    <td>Australia</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>4.0</td>
+                    <td>Denmark</td>
+                    <td>+</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="text_under_table_chatauri">
+            <div class="headline_under_table">
+                <h3>Reviews</h3>
+            </div>
+            <p>
+                Most often, the applications ordered from us are aimed not at a particular
+                region, but directly at a group of countries. This application is a vivid
+                example, the average rating from different regions is 4.25.
+            </p>
+        </div>
+    </div>
+</section>
+<!--    FOOTER-->
+
+</body>
+</html>

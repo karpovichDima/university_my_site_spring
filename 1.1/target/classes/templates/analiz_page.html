@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>Develop</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" th:href="@{css/main.css}">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|PT+Sans+Caption:400,700" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="../static/favicon-16x16.png">
+</head>
+<body>
+<!--  HEADER-->
+<div class="header_sad_weather_page">
+    <div class="container">
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="/home">Home</a>
+                </li>
+                <li>
+                    <a href="/contacts">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container"></div>
+    <div class="header__title">Karpovich Dmitry</div>
+    <div class="header__slogan">Android<br>Backend<br>Develop</div>
+    <div class="header__arrow">
+        <a href="#footer_chatauri"> <i class="fa fa-chevron-down" aria-hidden="true"> </i></a>
+    </div>
+</div>
+<!--  HEADER-->
+
+
+<!--    FOOTER-->
+<section id="footer_chatauri">
+    <div class="container_chatauri_page">
+        <div class="title_description_app">
+            <h2>What you need to know about this application</h2>
+        </div>
+        <div class="services_clearfix">
+            <div class="services__item">
+                <div class="image_analizer">
+                    <img th:src="@{analiz_1.1.jpg}"/>
+                </div>
+                <div class="headline">
+                    <h3>Purpose</h3>
+                </div>
+                <div class="services__item__text">
+                    <p>
+                        One of the most useful apps that we have ever done.
+                        If for some reason you cannot gain weight or lose weight,
+                        our application will analyze all your activities during
+                        the day, your personal data and make a recommendation that
+                        you should exclude from your daily affairs and what should
+                        be added. The algorithm works on the basis of the average
+                        energy consumption for 1 minute of occupation of a particular
+                        work. Now you will always be with a great figure.
+                    </p>
+                </div>
+            </div>
+            <div class="services__item">
+                <div class="image_analizer">
+                    <img th:src="@{analiz_1.2.jpg}"/>
+                </div>
+                <div class="headline">
+                    <h3>Design</h3>
+                </div>
+                <div class="services__item__text">
+                    <p>
+                        The user interface is built in the best trends of modern design
+                        SITES, our team decided that this is a fairly fresh solution,
+                        think for yourself, the design of various sites in comparison
+                        with each other is almost the same, you always know where the
+                        menu, header, footer, information for the user, etc .d Well,
+                        we decided to transfer all your user experience to the screen
+                        of your smartphone. Everything is very intuitive and
+                        incredibly beautiful.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="table_parent">
+        <div class="table_chatauri_1">
+            <table>
+                <tbody>
+                <div class="header_for_table">Who liked it</div>
+                <tr>
+                    <th>Rating</th>
+                    <th>Region</th>
+                    <th>Local</th>
+                </tr>
+                <tr>
+                    <td>4.5</td>
+                    <td>China</td>
+                    <td>+-</td>
+                </tr>
+                <tr>
+                    <td>4.8</td>
+                    <td>Spain</td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <td>4.9</td>
+                    <td>Austria</td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <td>4.6</td>
+                    <td>Italy</td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <td>4.3</td>
+                    <td>Netherlands</td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <td>4.9</td>
+                    <td>Norway</td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <td>5.0</td>
+                    <td>France</td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <td>4.8</td>
+                    <td>USA</td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <td>4.5</td>
+                    <td>Germany</td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>Switzerland</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>4,7</td>
+                    <td>Canada</td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <td>4.5</td>
+                    <td>Britain</td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <td>4.1</td>
+                    <td>Japan</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>4.3</td>
+                    <td>Sweden</td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <td>4.8</td>
+                    <td>Australia</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>4.7</td>
+                    <td>Denmark</td>
+                    <td>+</td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="text_under_table_chatauri">
+            <div class="headline_under_table">
+                <h3>Reviews</h3>
+            </div>
+            <p>
+                This application is not just in this list, this is the most successful of our
+                application, according to users, in all regions very praise, the customer, as
+                always, is pleased, well, we can not but rejoice. Strange, but its popularity
+                is so high that even the statistics of our chat does not look very decent.
+                Sometimes it is very difficult to understand what the user wants. Based on
+                the experience of this application, it needs exactly the validity of your
+                application.
+            </p>
+        </div>
+    </div>
+
+</section>
+<!--    FOOTER-->
+
+
+</body>
+</html>

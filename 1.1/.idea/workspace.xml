@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34f919a0-54d6-49c5-818c-1aa08315000a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/university/service/Impl/MailServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/university/service/MailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/university/utils/Mail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/email-template.vm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/university/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/university/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,7 +30,7 @@
     <session id="1834935507">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.15" value="1" />
@@ -57,7 +48,7 @@
           <entry key="html" value="942" />
           <entry key="java" value="1778" />
           <entry key="properties" value="4" />
-          <entry key="txt" value="207" />
+          <entry key="txt" value="225" />
           <entry key="xml" value="53" />
         </counts>
       </usages-collector>
@@ -66,7 +57,7 @@
           <entry key="CSS" value="185" />
           <entry key="HTML" value="942" />
           <entry key="JAVA" value="1778" />
-          <entry key="PLAIN_TEXT" value="229" />
+          <entry key="PLAIN_TEXT" value="247" />
           <entry key="Properties" value="4" />
           <entry key="XML" value="53" />
         </counts>
@@ -438,7 +429,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543953856642" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543953923119" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -521,7 +512,7 @@
       <workItem from="1543738320668" duration="7000" />
       <workItem from="1543939589112" duration="1297000" />
       <workItem from="1543941314324" duration="1702000" />
-      <workItem from="1543952291548" duration="1551000" />
+      <workItem from="1543952291548" duration="1661000" />
     </task>
     <task id="LOCAL-00001" summary="added thymeleafe">
       <created>1543678426145</created>
@@ -579,11 +570,18 @@
       <option name="project" value="LOCAL" />
       <updated>1543705160056</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added Email sender">
+      <created>1543953942335</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1543953942336</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31259000" />
+    <option name="totallyTimeSpent" value="31369000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -596,12 +594,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="Image Layers" order="1" />
       <window_info id="UI Designer" order="2" />
-      <window_info active="true" content_ui="combo" x="141" y="155" width="293" height="705" id="Project" order="3" visible="true" weight="0.19530201" />
+      <window_info content_ui="combo" x="141" y="155" width="293" height="705" id="Project" order="3" visible="true" weight="0.19530201" />
       <window_info id="Favorites" order="4" weight="0.3295302" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Web" order="6" side_tool="true" />
@@ -614,7 +611,7 @@
       <window_info anchor="bottom" id="Database Changes" order="5" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="6" show_stripe_button="false" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.32907802" />
-      <window_info anchor="bottom" id="Run" order="8" weight="0.6113475" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.6439716" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
@@ -681,7 +678,8 @@
     <MESSAGE value="write new users to db from UI" />
     <MESSAGE value="write message on UI" />
     <MESSAGE value="if else in thymeleaf" />
-    <option name="LAST_COMMIT_MESSAGE" value="if else in thymeleaf" />
+    <MESSAGE value="added Email sender" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Email sender" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

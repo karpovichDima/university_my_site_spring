@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>Develop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" th:href="@{css/main.css}">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|PT+Sans+Caption:400,700" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="../static/favicon-16x16.png">
+</head>
+
+<!--  HEADER-->
+<body>
+<div class="body_sad_weather_page">
+    <div class="header_sad_weather_page">
+        <div class="container_whether">
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="/home">Home</a>
+                    </li>
+                    <li>
+                        <a href="/contacts">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container"></div>
+        <div class="header__title">Karpovich Dmitry</div>
+        <div class="header__slogan">Android<br>Backend<br>Develop</div>
+        <div class="header__arrow">
+            <a href="#footer_chatauri"> <i class="fa fa-chevron-down" aria-hidden="true"> </i></a>
+        </div>
+    </div>
+    <!--  HEADER-->
+
+    <!--    FOOTER-->
+    <section id="footer_chatauri">
+        <div class="first_section_weather_page">
+            <div class="container_sad_weather_page">
+                <div class="title_description_app_sad_whether">
+                    <h2>What you need to know about this application</h2>
+                </div>
+                <div class="services_clearfix">
+                    <div class="services__item">
+                        <img th:src="@{sad_weather_1.1.jpg}"/>
+                        <div class="headline">
+                            <h3>Purpose</h3>
+                        </div>
+                        <div class="services__item__text">
+                            <p>
+                                If you need to know the weather, but go to the window too lazy,
+                                then this application is right for you. Displays information
+                                about the weather at the moment, the forecast for several days
+                                in advance. Very simple functionality for true connoisseurs
+                                of material design.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="services__item">
+                        <img th:src="@{sad_weather_1.2.jpg}"/>
+                        <div class="headline">
+                            <h3>Design</h3>
+                        </div>
+                        <div class="services__item__sad__wheather">
+                            <p>
+                                The design is based on the concept of google, called "material",
+                                it gives the opportunity to give the user a greater interface
+                                response to any of its actions. It was used a lot of colors from
+                                a completely different palette. But there is not a single bright
+                                color, it turned out something very non-standard and rather
+                                restrained.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="table_parent">
+                <div class="table_chatauri_1">
+                    <table>
+                        <tbody>
+                        <div class="header_for_table_sad_weather">
+                            Who liked it
+                        </div>
+                        <tr>
+                            <th>Rating</th>
+                            <th>Region</th>
+                            <th>Local</th>
+                        </tr>
+                        <tr>
+                            <td>4.2</td>
+                            <td>China</td>
+                            <td>+</td>
+                        </tr>
+                        <tr>
+                            <td>4.6</td>
+                            <td>Spain</td>
+                            <td>+</td>
+                        </tr>
+                        <tr>
+                            <td>4.1</td>
+                            <td>Austria</td>
+                            <td>+</td>
+                        </tr>
+                        <tr>
+                            <td>4.9</td>
+                            <td>Italy</td>
+                            <td>+</td>
+                        </tr>
+                        <tr>
+                            <td>4.5</td>
+                            <td>Netherlands</td>
+                            <td>+</td>
+                        </tr>
+                        <tr>
+                            <td>4.8</td>
+                            <td>Norway</td>
+                            <td>+</td>
+                        </tr>
+                        <tr>
+                            <td>4.6</td>
+                            <td>France</td>
+                            <td>+</td>
+                        </tr>
+                        <tr>
+                            <td>4.3</td>
+                            <td>USA</td>
+                            <td>+</td>
+                        </tr>
+                        <tr>
+                            <td>4.6</td>
+                            <td>Germany</td>
+                            <td>+</td>
+                        </tr>
+                        <tr>
+                            <td>4.8</td>
+                            <td>Switzerland</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>4.2</td>
+                            <td>Canada</td>
+                            <td>+</td>
+                        </tr>
+                        <tr>
+                            <td>4.1</td>
+                            <td>Britain</td>
+                            <td>+</td>
+                        </tr>
+                        <tr>
+                            <td>4.1</td>
+                            <td>Japan</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>3.8</td>
+                            <td>Sweden</td>
+                            <td>+</td>
+                        </tr>
+                        <tr>
+                            <td>3.9</td>
+                            <td>Australia</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>4.1</td>
+                            <td>Denmark</td>
+                            <td>+</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="text_under_table_sad_weather">
+                    <div class="headline_under_table">
+                        <h3>Reviews</h3>
+                    </div>
+                    <div class="text_under_table_sad_weather_without_header">
+                        <p>
+                            This project, like many others, is aimed at localization,
+                            in this case, the concept of localization fits not only the
+                            language, but the icons, accent colors, even the sounds of
+                            notifications, in general, everyone was very pleased, the
+                            world average rating 4.4.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    FOOTER-->
+</div>
+</body>
+</html>
